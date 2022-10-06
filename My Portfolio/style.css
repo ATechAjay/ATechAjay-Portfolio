@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 ::selection {
   background: #000000;
   color: #fff;
@@ -350,6 +349,36 @@ Set the required space from top of the HERO section.
   border-radius: 1rem 1rem 0 0;
 }
 
+/* OVERLAY STYLE */
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay img {
+  height: 80vh;
+  position: relative;
+  top: 10%;
+  left: 35%;
+}
+
+#resume {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 @media (max-width: 68.5rem) {
   /* body {
     background: red;
@@ -377,6 +406,15 @@ Set the required space from top of the HERO section.
   /* body {
     background: green;
   } */
+
+  #overlay img {
+    margin-top: 2rem;
+    height: 60%;
+    width: 80vw;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
   .hero-container {
     grid-template-columns: 1fr;
@@ -414,6 +452,15 @@ Set the required space from top of the HERO section.
   /* body {
     background: red;
   } */
+
+  #overlay img {
+    margin-top: 2rem;
+    height: 60%;
+    width: 80vw;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
   .client-faces {
     flex-direction: column;
