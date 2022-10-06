@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 ::selection {
   background: #000000;
   color: #fff;
@@ -235,7 +234,7 @@ Set the required space from top of the HERO section.
   justify-content: space-between;
   padding: 1.6rem 2.4rem;
 }
-.header > .logo {
+a .logo {
   width: 5.6rem;
   cursor: pointer;
 }
