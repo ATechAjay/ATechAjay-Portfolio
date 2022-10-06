@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 ::selection {
   background: #000000;
   color: #fff;
@@ -354,38 +353,138 @@ Set the required space from top of the HERO section.
   border-radius: 1rem 1rem 0 0;
 }
 
-
 /*----------About section styling starts------------*/
 
-#about{
+#about {
   /*Check hero section styling for about section container styling*/
 }
 
-.about-heading{
+.about-heading {
   text-align: center;
   grid-column: span 2;
   margin-bottom: 0;
 }
 
-.img-wrapper img{
-  width:100%;
+.img-wrapper img {
+  width: 100%;
   object-fit: contain;
   border-radius: 10px;
   position: relative;
-  border-right:10px solid #1e90ff;
-  border-bottom:10px solid #1e90ff;
+  border-right: 10px solid #1e90ff;
+  border-bottom: 10px solid #1e90ff;
 }
 
-.about-details{
+.about-details {
   font-size: 1.8rem;
   text-align: justify;
 }
 
-#about span{
-  color:#1e90ff;
+#about span {
+  color: #1e90ff;
   font-weight: 600;
 }
 /*About section styling ends*/
+
+/* -----footer section styling begins----- */
+.footer-section {
+  height: 64vh;
+  padding-top: 10vh;
+  background-color: #333;
+}
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+  background-color: #333;
+}
+
+.footer-heading {
+  font-size: 4.2rem;
+  color: #fff;
+}
+
+.footer-author {
+  background-color: #333;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.footer-link-box {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.link {
+  list-style: none;
+  /* changed the color of icons to white  */
+  filter: brightness(0) invert(1);
+  border: 3px solid #fff;
+  transition: all 0.5s;
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  background: transparent;
+  /* background: #000; */
+  border: 3px dotted #333;
+  border-radius: 50%;
+  z-index: -2;
+  animation: rotate 7s linear infinite;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.link:hover::before {
+  opacity: 1;
+  border: 3px dotted #1e90ff;
+}
+.link a {
+  color: #333;
+}
+.link,
+.fab {
+  transition: all 0.4s;
+}
+.link .fab {
+  /* color: #f7f7f7; */
+  font-size: 36px;
+}
+
+.link:hover {
+  transform: translateY(-1.5rem);
+}
+.link:hover .fab {
+  color: #1e90ff;
+}
+.link:hover {
+  border: 3px solid #1e90ff;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----footer section ends here---- */
 
 @media (max-width: 68.5rem) {
   /* body {
@@ -396,7 +495,6 @@ Set the required space from top of the HERO section.
   .about-heading {
     font-size: 3.6rem;
   }
-
 
   .client-faces p {
     font-size: 1.6rem;
@@ -422,21 +520,21 @@ Set the required space from top of the HERO section.
     gap: 8rem;
   }
 
-  #about{
-    display:block;
+  #about {
+    display: block;
   }
 
-  .about-heading{
+  .about-heading {
     padding-bottom: 5rem;
   }
 
-  .img-wrapper{
-    display:grid;
+  .img-wrapper {
+    display: grid;
     justify-items: center;
   }
 
-  .img-wrapper img{
-    width:80%;
+  .img-wrapper img {
+    width: 80%;
     margin-bottom: 5rem;
   }
 
@@ -464,6 +562,19 @@ Set the required space from top of the HERO section.
     visibility: visible;
     pointer-events: auto;
   }
+
+  .footer-link-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .link {
+    height: 60px;
+    width: 60px;
+  }
+  .link .fab {
+    /* color: #f7f7f7; */
+    font-size: 30px;
+  }
 }
 
 /* day 95 */
@@ -483,7 +594,7 @@ Set the required space from top of the HERO section.
     font-size: 3rem;
   }
 
-  .hero-container{
+  .hero-container {
     gap: 0;
   }
 
@@ -501,5 +612,21 @@ Set the required space from top of the HERO section.
   .hero-link-cta a:link,
   .hero-link-cta a:visited {
     width: 100%;
+  }
+  .footer-section {
+    height: 70vh;
+  }
+  .footer-heading {
+    font-size: 3.2rem;
+  }
+  .link {
+    height: 50px;
+    width: 50px;
+  }
+  .link .fab {
+    font-size: 22px;
+  }
+  .footer-author p {
+    font-size: 2rem;
   }
 }
