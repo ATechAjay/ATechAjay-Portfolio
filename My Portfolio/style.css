@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 ::selection {
   background: #000000;
   color: #fff;
@@ -117,7 +116,8 @@ body {
   transform: translate(7.5px, 2.5px) rotate(-45deg);
 }
 
-.hero-container {
+.hero-container,
+#about {
   max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -143,7 +143,8 @@ body {
   letter-spacing: -1px;
 }
 
-.hero-description {
+.hero-description,
+.about-details {
   font-size: 2.2rem;
   /* text-align: center; */
   line-height: 1.4;
@@ -235,7 +236,7 @@ Set the required space from top of the HERO section.
   justify-content: space-between;
   padding: 1.6rem 2.4rem;
 }
-.header > .logo {
+a .logo {
   width: 5.6rem;
   cursor: pointer;
 }
@@ -285,7 +286,8 @@ Set the required space from top of the HERO section.
    130rem === 1300px 
    maximum width of the container! */
 }
-.project-heading, .contact-heading {
+.project-heading, .contact-heading,
+.about-heading {
   color: #333;
   text-align: center;
   font-size: 4.8rem;
@@ -299,7 +301,8 @@ Set the required space from top of the HERO section.
   overflow: hidden;
   transition: all 0.3s;
 }
-.project:hover {
+.project:hover,
+.img-wrapper img:hover {
   transform: scale(1.02);
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
 }
@@ -465,6 +468,37 @@ Set the required space from top of the HERO section.
   background: #1b82e6;
   transform: translateY(5px);
 }
+/*----------About section styling starts------------*/
+
+#about {
+  /*Check hero section styling for about section container styling*/
+}
+
+.about-heading {
+  text-align: center;
+  grid-column: span 2;
+  margin-bottom: 0;
+}
+
+.img-wrapper img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  position: relative;
+  border-right: 10px solid #1e90ff;
+  border-bottom: 10px solid #1e90ff;
+}
+
+.about-details {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+#about span {
+  color: #1e90ff;
+  font-weight: 600;
+}
+/*About section styling ends*/
 
 @media (max-width: 68.5rem) {
   /* body {
@@ -472,7 +506,8 @@ Set the required space from top of the HERO section.
   } */
 
   .hero-heading,
-  .contact-heading {
+  .contact-heading,
+  .about-heading {
     font-size: 3.6rem;
   }
 
@@ -501,6 +536,24 @@ Set the required space from top of the HERO section.
   .hero-container {
     grid-template-columns: 1fr;
     gap: 8rem;
+  }
+
+  #about {
+    display: block;
+  }
+
+  .about-heading {
+    padding-bottom: 5rem;
+  }
+
+  .img-wrapper {
+    display: grid;
+    justify-items: center;
+  }
+
+  .img-wrapper img {
+    width: 80%;
+    margin-bottom: 5rem;
   }
 
   .hero-text-box,
@@ -545,7 +598,8 @@ Set the required space from top of the HERO section.
     gap: 1.8rem;
   }
 
-  .hero-heading {
+  .hero-heading,
+  .about-heading {
     font-size: 3rem;
   }
 
