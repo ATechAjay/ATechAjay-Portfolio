@@ -387,6 +387,45 @@ Set the required space from top of the HERO section.
 }
 /*About section styling ends*/
 
+/*BACK TO TOP*/
+.back-to-top{
+  text-decoration: none;
+  color:#1e90ff;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+}
+
+.back-to-top button{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:#1e90ff;
+  border:0;
+  background-color: unset;
+  font-size: 1.3rem;
+  font-weight:800 ;
+ 
+}
+
+.back-to-top button svg{
+  width:2rem;
+  background-color: black;
+  background-color:#1e90ff ;
+  padding:10px;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  fill:white;
+  margin-bottom: .4rem;
+}
+
+
+
+.back-to-top button svg:hover{
+  transform:scale(1.1); 
+}
+
 @media (max-width: 68.5rem) {
   /* body {
     background: red;
