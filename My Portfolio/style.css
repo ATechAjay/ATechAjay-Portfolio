@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 ::selection {
   background: #000000;
   color: #fff;
@@ -237,7 +236,7 @@ Set the required space from top of the HERO section.
   justify-content: space-between;
   padding: 1.6rem 2.4rem;
 }
-.header > .logo {
+a .logo {
   width: 5.6rem;
   cursor: pointer;
 }
@@ -354,35 +353,34 @@ Set the required space from top of the HERO section.
   border-radius: 1rem 1rem 0 0;
 }
 
-
 /*----------About section styling starts------------*/
 
-#about{
+#about {
   /*Check hero section styling for about section container styling*/
 }
 
-.about-heading{
+.about-heading {
   text-align: center;
   grid-column: span 2;
   margin-bottom: 0;
 }
 
-.img-wrapper img{
-  width:100%;
+.img-wrapper img {
+  width: 100%;
   object-fit: contain;
   border-radius: 10px;
   position: relative;
-  border-right:10px solid #1e90ff;
-  border-bottom:10px solid #1e90ff;
+  border-right: 10px solid #1e90ff;
+  border-bottom: 10px solid #1e90ff;
 }
 
-.about-details{
+.about-details {
   font-size: 1.8rem;
   text-align: justify;
 }
 
-#about span{
-  color:#1e90ff;
+#about span {
+  color: #1e90ff;
   font-weight: 600;
 }
 /*About section styling ends*/
@@ -420,8 +418,6 @@ Set the required space from top of the HERO section.
   margin-bottom: .4rem;
 }
 
-
-
 .back-to-top button svg:hover{
   transform:scale(1.1); 
 }
@@ -435,7 +431,6 @@ Set the required space from top of the HERO section.
   .about-heading {
     font-size: 3.6rem;
   }
-
 
   .client-faces p {
     font-size: 1.6rem;
@@ -461,21 +456,21 @@ Set the required space from top of the HERO section.
     gap: 8rem;
   }
 
-  #about{
-    display:block;
+  #about {
+    display: block;
   }
 
-  .about-heading{
+  .about-heading {
     padding-bottom: 5rem;
   }
 
-  .img-wrapper{
-    display:grid;
+  .img-wrapper {
+    display: grid;
     justify-items: center;
   }
 
-  .img-wrapper img{
-    width:80%;
+  .img-wrapper img {
+    width: 80%;
     margin-bottom: 5rem;
   }
 
@@ -522,7 +517,7 @@ Set the required space from top of the HERO section.
     font-size: 3rem;
   }
 
-  .hero-container{
+  .hero-container {
     gap: 0;
   }
 
