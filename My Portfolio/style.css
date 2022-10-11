@@ -304,11 +304,15 @@ a .logo {
   overflow: hidden;
   transition: all 0.3s;
 }
+.img-wrapper img:hover {
+  transition: all 0.3s ease-in;
+}
 .project:hover,
 .img-wrapper img:hover {
   transform: scale(1.02);
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
 }
+
 .project span {
   position: absolute;
   top: 0;
@@ -353,7 +357,7 @@ a .logo {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 1rem 1rem 0 0;
+  /* border-radius: 1rem 1rem 0 0; */
 }
 
 /*----------About section styling starts------------*/
@@ -373,12 +377,12 @@ a .logo {
   object-fit: contain;
   border-radius: 10px;
   position: relative;
-  border-right: 10px solid #1e90ff;
-  border-bottom: 10px solid #1e90ff;
+  /* border-right: 10px solid #1e90ff;
+  border-bottom: 10px solid #1e90ff; */
 }
 
 .about-details {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-align: justify;
 }
 
@@ -392,7 +396,7 @@ a .logo {
   height: 64vh;
   width: 100%;
   padding-top: 10vh;
-  background-color: #333;
+  background-color: rgb(0, 128, 255);
   text-align: center;
 }
 .footer-cta {
@@ -401,7 +405,7 @@ a .logo {
   align-items: center;
   justify-content: center;
   gap: 86px;
-  background-color: #333;
+  background-color: rgb(0, 128, 255);
 }
 
 .footer-heading {
@@ -410,7 +414,7 @@ a .logo {
 }
 
 .footer-author {
-  background-color: #333;
+  background-color: rgb(0, 128, 255);
   font-size: 2.4rem;
   color: #fff;
   text-align: center;
