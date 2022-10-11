@@ -1,3 +1,4 @@
+/* Margin and padding of the webPage created */
 * {
   margin: 0;
   padding: 0;
@@ -158,6 +159,7 @@ Hover
 Active
 ==> (LVHA) 
 */
+/* Creating the hosting link for hire me etc , to set its size, color, paddings and all */
 .hero-btn:link,
 .hero-btn:visited {
   display: inline-block;
@@ -236,6 +238,7 @@ Set the required space from top of the HERO section.
   justify-content: space-between;
   padding: 1.6rem 2.4rem;
 }
+/* Logo width and the cursor setting */
 a .logo {
   width: 5.6rem;
   cursor: pointer;
