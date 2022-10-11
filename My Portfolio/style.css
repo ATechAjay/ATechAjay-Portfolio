@@ -1,3 +1,4 @@
+/* Margin and padding of the webPage created */
 * {
   margin: 0;
   padding: 0;
@@ -158,6 +159,7 @@ Hover
 Active
 ==> (LVHA) 
 */
+/* Creating the hosting link for hire me etc , to set its size, color, paddings and all */
 .hero-btn:link,
 .hero-btn:visited {
   display: inline-block;
@@ -236,6 +238,7 @@ Set the required space from top of the HERO section.
   justify-content: space-between;
   padding: 1.6rem 2.4rem;
 }
+/* Logo width and the cursor setting */
 a .logo {
   width: 5.6rem;
   cursor: pointer;
@@ -384,6 +387,108 @@ a .logo {
   font-weight: 600;
 }
 /*About section styling ends*/
+/* -----footer section styling begins----- */
+.footer-section {
+  height: 64vh;
+  width: 100%;
+  padding-top: 10vh;
+  background-color: #333;
+  text-align: center;
+}
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+  background-color: #333;
+}
+
+.footer-heading {
+  font-size: 4.2rem;
+  color: #fff;
+}
+
+.footer-author {
+  background-color: #333;
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.footer-link-box {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.link {
+  list-style: none;
+  /* changed the color of icons to white  */
+  filter: brightness(0) invert(1);
+  border: 3px solid #fff;
+  transition: all 0.5s;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  background: transparent;
+  /* background: #000; */
+  border: 3px dotted #fff;
+  border-radius: 50%;
+  z-index: -2;
+  animation: rotate 7s linear infinite;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.link:hover::before {
+  opacity: 1;
+  border: 3px dotted #1e90ff;
+}
+.link a {
+  color: #333;
+}
+.link,
+.fab {
+  transition: all 0.4s;
+}
+.link .fab {
+  /* color: #f7f7f7; */
+  font-size: 36px;
+}
+
+.link:hover {
+  transform: translateY(-1.5rem);
+}
+.link:hover .fab {
+  color: #1e90ff;
+}
+.link:hover {
+  border: 3px solid #1e90ff;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----footer section ends here---- */
 
 /*BACK TO TOP*/
 .back-to-top{
@@ -498,6 +603,13 @@ a .logo {
     visibility: visible;
     pointer-events: auto;
   }
+  .link {
+    height: 60px;
+    width: 60px;
+  }
+  .link .fab {
+    font-size: 30px;
+  }
 }
 
 /* day 95 */
@@ -535,5 +647,33 @@ a .logo {
   .hero-link-cta a:link,
   .hero-link-cta a:visited {
     width: 100%;
+  }
+  .footer-cta {
+    gap: 42px;
+  }
+  .link {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+  }
+  .footer-heading {
+    font-size: 3.2rem;
+    color: #fff;
+  }
+
+  .footer-author p {
+    font-size: 1.8rem;
+    padding-top: 2vh;
+  }
+  .footer-link-box {
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .link .fab {
+    font-size: 22px;
+  }
+  .footer-author p {
+    font-size: 2rem;
   }
 }
