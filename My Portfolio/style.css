@@ -118,7 +118,7 @@ body {
 }
 
 .hero-container,
-#about {
+#about-section {
   max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -501,7 +501,7 @@ a .logo {
   text-align: justify;
 }
 
-#about span {
+#about-section span {
   color: #1e90ff;
   font-weight: 600;
 }
@@ -647,7 +647,7 @@ a .logo {
     gap: 8rem;
   }
 
-  #about {
+  #about-section {
     display: block;
   }
 
