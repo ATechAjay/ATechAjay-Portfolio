@@ -362,11 +362,11 @@ a .logo {
 
 /* contact section styling */
 .contact-section{
-  padding: 100px 0;
+  padding: 50px 0px 100px 0px;
 }
 .max-width{
   max-width: 1300px;
-  padding: 0 70px;
+  padding: 0 50px;
   margin: auto;
 }
 .contact-section{
